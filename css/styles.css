@@ -689,3 +689,37 @@ img {
     background-color: #31d0aa;
 }
 
+.background-fone {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(46, 47, 66, 0.4)
+}
+
+.element {
+    position: absolute;
+    background-color: var(--text-color);
+    top: 50%;
+    left: 50%;
+    height: 584px;
+    width: 408px;
+    transform: translate(-50%, -50%);
+    padding: 72px 24px 24px 24px;
+    border-radius: 4px;
+
+}
+
+.element-text {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    text-align: center;
+}
+
+.close-element {
+    color: #2e2f42;
+}
