@@ -681,6 +681,7 @@ img {
     --text-color: #f4f4fd;
     --text-color-shrift: #2E2F42;
     --secondary-color: #8e8f99;
+    --fone-color: #404bbf;
 }
 .footer-href:hover {
     background-color: #31d0aa;
@@ -752,10 +753,6 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form {
-    margin-bottom: 8px;
-}
-
 .close-element:hover {
     background-color: #404bbf;
     border: none;
@@ -807,6 +804,7 @@ img {
 
 .input-svg-box {
     position: relative;
+    margin-bottom: 8px;
 }
 
 .svg-input {
@@ -852,9 +850,9 @@ img {
     fill: transparent;
 }
 
-.visually-hidden:checked + .span-user-privicy {
+.visually-hidden:checked .span-user-privicy {
+    background-color: var(--fone-color);
     border: none;
-
     fill: #F4F4FD;
 }
 
@@ -862,6 +860,10 @@ img {
     margin-bottom: 16px;
 }
 
+.textarea-element {
+    padding: 8px 16px;
+    outline: transparent;
+}
 
 .textarea-element::placeholder {
     position: absolute;
