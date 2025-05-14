@@ -854,11 +854,9 @@ img {
 input[type="checkbox"]:checked + label .span-user-privicy {
     background-color: var(--fone-color);
     border: none;
-}
-
-input[type="checkbox"]:checked + label .span-user-privicy svg {
     fill: var(--fill);
 }
+
 
 .textarea-svg-box {
     margin-bottom: 16px;
