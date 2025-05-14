@@ -850,11 +850,19 @@ img {
     fill: transparent;
 }
 
-.visually-hidden:checked .span-user-privicy {
+.visually-hidden:checked + .span-user-privicy {
     background-color: var(--fone-color);
     border: none;
     fill: #F4F4FD;
 }
+
+.span-user-privicy.chacked {
+    background-color: var(--fone-color);
+    border: none;
+    fill: #F4F4FD;
+}
+
+
 
 .textarea-svg-box {
     margin-bottom: 16px;
