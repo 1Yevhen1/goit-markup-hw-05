@@ -706,7 +706,6 @@ img {
 
 /* element */
 .element {
-    position: absolute;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -717,6 +716,7 @@ img {
     width: 408px;
     transform: translate(-50%, -50%);
     padding: 72px 24px 24px 24px;
+    position: absolute;
     border-radius: 4px;
     position: relative;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -750,7 +750,7 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-element:hover {
@@ -781,11 +781,11 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover .svg-close {
+.close-element:hover .svg-close {
     fill: #ffffff;
 }
 
-.button:focus .svg-close {
+.close-element:focus .svg-close {
     fill: #ffffff;
 }
 
@@ -976,5 +976,4 @@ border: none;
 
 .svg-footer {
     margin-left: 16px;
-    
 }
