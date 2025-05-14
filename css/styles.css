@@ -682,6 +682,7 @@ img {
     --text-color-shrift: #2E2F42;
     --secondary-color: #8e8f99;
     --fone-color: #404bbf;
+    --fill: #F4F4FD;
 }
 .footer-href:hover {
     background-color: #31d0aa;
@@ -850,19 +851,14 @@ img {
     fill: transparent;
 }
 
-.visually-hidden:checked + .span-user-privicy {
+input[type="checkbox"]:checked + label .span-user-privicy {
     background-color: var(--fone-color);
     border: none;
-    fill: #F4F4FD;
 }
 
-.span-user-privicy.chacked {
-    background-color: var(--fone-color);
-    border: none;
-    fill: #F4F4FD;
+input[type="checkbox"]:checked + label .span-user-privicy svg {
+    fill: var(--fill);
 }
-
-
 
 .textarea-svg-box {
     margin-bottom: 16px;
