@@ -705,23 +705,23 @@ img {
 
 
 /* element */
-.modal-form {
-    background: #fcfcfc;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+.element {
+    position: absolute;
     top: 50%;
     left: 50%;
-    min-height: 584px;
-    width: 408px;
     transform: translate(-50%, -50%);
-    padding: 72px 24px 24px 24px;
-    position: absolute;
+    width: 408px;
+    min-height: 584px;
+    background: #fcfcfc;
+    box-shadow:0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    padding: 72px 24px 24px 24px;
 }
-
 .element-text {
     font-family: Roboto;
     font-weight: 500;
@@ -749,7 +749,6 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-element:hover {
@@ -896,6 +895,8 @@ img {
 
 .button-element {
 display: block;
+margin-left: auto;
+margin-right: auto;
 min-width: 169px;
 height: 56px;
 font-family: "Roboto", sans-serif;
@@ -908,6 +909,7 @@ cursor: pointer;
 background-color: #4D5AE5;
 border: none;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+border-radius: 4px;
 }
 
 .input-footer {
